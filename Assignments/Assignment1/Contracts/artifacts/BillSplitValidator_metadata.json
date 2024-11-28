@@ -1,0 +1,80 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "AmountCantBeSplitEvenly",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "InvalidAmount",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "numberOfPeople",
+						"type": "uint8"
+					}
+				],
+				"name": "validateSplit",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountPerPerson",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Assignments/Assignment1/Contracts/BillSplitValidator.sol": "BillSplitValidator"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Assignments/Assignment1/Contracts/BillSplitValidator.sol": {
+			"keccak256": "0xcf18058b7b61aef0e32295bb315629dbd98caf4126ab2ffb81dc4f78cc6b9612",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://4dbe55c46a3a2ed746c6c4edf3533a1c415e5a83a96c6e468a87311c64d76808",
+				"dweb:/ipfs/QmNsjh6x5mnZmSHPvu8wdcYTkZfTJQvem3xGyTbWkwRoXD"
+			]
+		}
+	},
+	"version": 1
+}

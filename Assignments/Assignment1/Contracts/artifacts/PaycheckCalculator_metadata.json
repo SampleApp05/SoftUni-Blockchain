@@ -1,0 +1,88 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "InvalidRating",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "InvalidSalaryAmount",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "salary",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "rating",
+						"type": "uint8"
+					}
+				],
+				"name": "calculatePaycheck",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Assignments/Assignment1/Contracts/PaycheckCalculator.sol": "PaycheckCalculator"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Assignments/Assignment1/Contracts/CompoundInterestCalculator.sol": {
+			"keccak256": "0x6af6eedd463776d4b4ee16e21d2b864ca9dbb60142ecb4481bb22b144f9115b8",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://80b8aa7f24682c08139e0e12c05ac34cc9846cd7fcc48c1bfedb21e5158bc76c",
+				"dweb:/ipfs/QmbRPvYZff1wrvPgV4AUoE6zPdoQCLNbTvW5L7pke1QN2z"
+			]
+		},
+		"Assignments/Assignment1/Contracts/PaycheckCalculator.sol": {
+			"keccak256": "0xec3b2cdfbfe041faaad90e255abf4c089e0bd7cb22a31af33073c0f179c91b62",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://c4c11e77276b0ca7b2aa200d1e522f733415b81c04478f63c5eca5ab25392aa8",
+				"dweb:/ipfs/QmcmDwELCTFvAB5AA8zvwEmrY6xvntkV8Rsum3DYjL2HS3"
+			]
+		}
+	},
+	"version": 1
+}

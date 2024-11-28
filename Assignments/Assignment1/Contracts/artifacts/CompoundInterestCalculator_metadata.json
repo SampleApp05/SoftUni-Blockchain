@@ -1,0 +1,109 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "InsuficientPrincipal",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "InterestDurationTooShort",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "InterestRateTooLow",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "principal",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "rate",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "numberOfYears",
+						"type": "uint8"
+					}
+				],
+				"name": "calculateCompoundInterest",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "principal",
+						"type": "uint256"
+					}
+				],
+				"name": "calculateSalaryBonus",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Assignments/Assignment1/Contracts/CompoundInterestCalculator.sol": "CompoundInterestCalculator"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Assignments/Assignment1/Contracts/CompoundInterestCalculator.sol": {
+			"keccak256": "0xb63d7731310da502564bc5f080a0437573d4132393d5433e1614ecee78969e17",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://8df0aef8c05127e76a7d437919ece088dfcfa540232c3aa340e3ef196862c633",
+				"dweb:/ipfs/QmRq5aqgorM5io3ZSKaQz4RDzRQoxyk238hpm7vBt9cf3z"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,110 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "BonusAlreadyClaimed",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "GoalAmountNotSet",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "InsuficientTotalSpending",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "InvalidGoalAmount",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "InvalidSpendingAmount",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "addSpending",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "claimBonus",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "bonusClaimed",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "goalAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "setGoalAmount",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Assignments/Assignment1/Contracts/GoalTracker.sol": "GoalTracker"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Assignments/Assignment1/Contracts/GoalTracker.sol": {
+			"keccak256": "0xed33cf5fac289a82c9a6285dc520367e92a47de6ea4a3e49f851bd13a197c413",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://92e180681cd2e5d3ec300e9cd91866284932b0b65fb307f58299007e717d40a3",
+				"dweb:/ipfs/QmdyY5J2SM736UZDwpmHkmNwWajjEB9y4Jqbyv776c5KkT"
+			]
+		}
+	},
+	"version": 1
+}
