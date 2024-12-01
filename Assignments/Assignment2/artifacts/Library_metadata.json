@@ -1,0 +1,102 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "BookNotFound",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "UnauthorizedAccess",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "author",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "librarianAddress",
+						"type": "address"
+					}
+				],
+				"name": "addAuthorizedLibrarianFor",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "author",
+						"type": "string"
+					},
+					{
+						"internalType": "enum BookStatus",
+						"name": "status",
+						"type": "uint8"
+					}
+				],
+				"name": "updateBookStatus",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Assignments/Assignment2/Library.sol": "Library"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Assignments/Assignment2/Library.sol": {
+			"keccak256": "0x9bbd493c8d2a3f8b91dca344ba29ce7fcd7486f68be3c90d4e2f83d6e79670c2",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://5dabfec4dd680f1f3720d9103d32d401fdb9c2c57917f8d3e429bcf5df7de299",
+				"dweb:/ipfs/QmTYoqN7TZNd3nK3Xsb39vWsaVj19xkf55TFswJnhH3tGR"
+			]
+		}
+	},
+	"version": 1
+}
