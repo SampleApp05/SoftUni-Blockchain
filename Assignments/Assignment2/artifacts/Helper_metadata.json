@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "lhs",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "rhs",
+						"type": "string"
+					}
+				],
+				"name": "append",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "str",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Assignments/Assignment2/Library.sol": "Helper"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Assignments/Assignment2/Library.sol": {
+			"keccak256": "0x6abfc9055b15f4a7581fea2143c4ad06d25184bc9d3c1d084ed57b343005567a",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://da014960ee6fd2a00923ff082898524974ba498dd45e7f7a09cbc50fdc2cbc64",
+				"dweb:/ipfs/QmZGKSxWbbZe8gQVPCYsak8mvUQVVvqzGETxJSYSTUs6Yq"
+			]
+		}
+	},
+	"version": 1
+}

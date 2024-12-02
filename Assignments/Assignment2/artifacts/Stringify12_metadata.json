@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "lhs",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "rhs",
+						"type": "string"
+					}
+				],
+				"name": "append1",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "str",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Assignments/Assignment2/Library.sol": "Stringify12"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Assignments/Assignment2/Library.sol": {
+			"keccak256": "0xe1d8c4e4ce465de229b4da327d227628681bd4ce57475cf82e7e20387bdace47",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://62e96122382417851958b2bc3a39f1a4303bcd58d78120fb174758cfafb37ede",
+				"dweb:/ipfs/QmVnTsMntn5vMtjgqq7LHfYJchWXK1aat87qjQ6AQ4HdmX"
+			]
+		}
+	},
+	"version": 1
+}

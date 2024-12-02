@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity 0.8.26;
 
+import "./Stringify.sol";
+
 enum BookStatus {
     active,
     outdated,
@@ -8,7 +10,7 @@ enum BookStatus {
 }
 
 struct Book {
-    string title; // assuming this is unique
+    string title;
     string author;
     uint256 publicationDate;
     uint256 expirationDate;
@@ -25,14 +27,14 @@ struct BookIndex {
 error BookNotFound();
 error UnauthorizedAccess();
 
-contract Library {
+contract Library is StringHelper {
     Book[] public books;
     mapping(string => BookIndex) private bookIndexes;
     mapping(string => address[]) private bookLibrarians;
 
     // MARK: - Private
-    function _idFor(string calldata title, string calldata author) private pure returns(string memory) {
-        return string(abi.encodePacked(title, author));
+    function _idFor(string calldata title, string calldata author) private view returns(string memory) {
+        return this.append(title, author);
     }
 
     // MARK: - Public

@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "lhs",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "rhs",
+						"type": "string"
+					}
+				],
+				"name": "append",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "str",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Assignments/Assignment2/Stringify.sol": "StringHelper"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Assignments/Assignment2/Stringify.sol": {
+			"keccak256": "0xb76a033a35ceb4a94101ed53a339f282538d4ae2c8386f581e57f60977c89462",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://f3dee1b217081ea094c2deccf09c2c8ed48a883cff27b471811e9924f56eaf9f",
+				"dweb:/ipfs/QmbhsewqXkoWQGs8HkteMu9UmH8Z1fhz4eoeDn4eCkRo5m"
+			]
+		}
+	},
+	"version": 1
+}
