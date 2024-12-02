@@ -26,17 +26,44 @@ error BookNotFound();
 error UnauthorizedAccess();
 
 contract Library {
-    Book[] private books;
+    Book[] public books;
     mapping(string => BookIndex) private bookIndexes;
     mapping(string => address[]) private bookLibrarians;
 
     // MARK: - Private
-    function _idFor(Book calldata book) private pure returns(string memory) {
-        return string(abi.encodePacked(book.title, book.author));
-    }
-
     function _idFor(string calldata title, string calldata author) private pure returns(string memory) {
         return string(abi.encodePacked(title, author));
+    }
+
+    // MARK: - Public
+    function createBook(string calldata title, string calldata author, uint256 expiryDate) public {
+        Book memory newBook;
+
+        newBook.title = title;
+        newBook.author = author;
+        newBook.expirationDate = block.timestamp + expiryDate * 1 seconds;
+        newBook.primaryLibrarian = msg.sender;
+
+        books.push(newBook);
+
+        string memory id = _idFor(title, author);
+        BookIndex memory bookIndex;
+        bookIndex.index = books.length - 1;
+        bookIndex.exists = true;
+
+        bookIndexes[id] = bookIndex;
+    }
+
+    function checkStatus(string calldata title, string calldata author) public returns(bool outdated) {
+        string memory id = _idFor(title, author);
+
+        BookIndex memory bookIndex = bookIndexes[id];
+        if (bookIndex.exists == false) { revert BookNotFound(); }
+
+        Book storage book = books[bookIndex.index];
+
+        book.readCount += 1;
+        return block.timestamp > book.expirationDate;
     }
 
     function addAuthorizedLibrarianFor(string calldata title, string calldata author, address librarianAddress) public {
@@ -50,7 +77,7 @@ contract Library {
         bookLibrarians[id].push(librarianAddress);
     }
 
-    function updateBookStatus(string calldata title, string calldata author, BookStatus status) public {
+    function updateExpirationDateFor(string calldata title, string calldata author, uint256 addedPeriod) public {
         string memory id = _idFor(title, author);
 
         BookIndex memory bookIndex = bookIndexes[id];
@@ -59,7 +86,7 @@ contract Library {
         Book storage book = books[bookIndex.index];
 
         if (msg.sender == book.primaryLibrarian) {
-            book.status = status;
+            book.expirationDate += addedPeriod * 1 days;
             return;
         }
 
@@ -67,9 +94,21 @@ contract Library {
 
         for (uint256 i = 0; i < authorizedLibrarians.length; i++)  {
             if (msg.sender == authorizedLibrarians[i]) { 
-                book.status = status;
+                book.expirationDate += addedPeriod * 1 days;
                 break;
             }
         }
+    }
+
+    function updateBookStatus(string calldata title, string calldata author, BookStatus status) public {
+        string memory id = _idFor(title, author);
+
+        BookIndex memory bookIndex = bookIndexes[id];
+        if (bookIndex.exists == false) { revert BookNotFound(); }
+
+        Book storage book = books[bookIndex.index];
+
+        if (msg.sender != book.primaryLibrarian) { revert UnauthorizedAccess(); }
+        book.status = status;
     }
 }
