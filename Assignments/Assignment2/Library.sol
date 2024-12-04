@@ -30,20 +30,21 @@ error UnauthorizedAccess();
 contract Library is StringHelper {
     Book[] public books;
     mapping(string => BookIndex) private bookIndexes;
-    mapping(string => address[]) private bookLibrarians;
+    mapping(string => mapping(address => bool)) private bookLibrarians;
 
     // MARK: - Private
-    function _idFor(string calldata title, string calldata author) private view returns(string memory) {
-        return this.append(title, author);
+    function _idFor(string calldata title, string calldata author) private pure returns(string memory) {
+        return append(title, author);
     }
-
+    
     // MARK: - Public
-    function createBook(string calldata title, string calldata author, uint256 expiryDate) public {
+    function createBook(string calldata title, string calldata author, uint256 publicationDate) public {
         Book memory newBook;
 
         newBook.title = title;
         newBook.author = author;
-        newBook.expirationDate = block.timestamp + expiryDate * 1 seconds;
+        newBook.publicationDate = publicationDate * 1 days; // not really used or correct
+        newBook.expirationDate = block.timestamp + 60 seconds; // low value for testing
         newBook.primaryLibrarian = msg.sender;
 
         books.push(newBook);
@@ -65,7 +66,7 @@ contract Library is StringHelper {
         Book storage book = books[bookIndex.index];
 
         book.readCount += 1;
-        return block.timestamp > book.expirationDate;
+        return book.status == BookStatus.outdated || block.timestamp > book.expirationDate;
     }
 
     function addAuthorizedLibrarianFor(string calldata title, string calldata author, address librarianAddress) public {
@@ -76,7 +77,7 @@ contract Library is StringHelper {
 
         if (msg.sender != books[bookIndex.index].primaryLibrarian) { revert UnauthorizedAccess(); }
 
-        bookLibrarians[id].push(librarianAddress);
+        bookLibrarians[id][librarianAddress] = true;
     }
 
     function updateExpirationDateFor(string calldata title, string calldata author, uint256 addedPeriod) public {
@@ -92,14 +93,11 @@ contract Library is StringHelper {
             return;
         }
 
-        address[] memory authorizedLibrarians = bookLibrarians[id];
-
-        for (uint256 i = 0; i < authorizedLibrarians.length; i++)  {
-            if (msg.sender == authorizedLibrarians[i]) { 
-                book.expirationDate += addedPeriod * 1 days;
-                break;
-            }
+        if (bookLibrarians[id][msg.sender] == false) {
+            revert UnauthorizedAccess();
         }
+
+        book.expirationDate += addedPeriod * 1 days;
     }
 
     function updateBookStatus(string calldata title, string calldata author, BookStatus status) public {

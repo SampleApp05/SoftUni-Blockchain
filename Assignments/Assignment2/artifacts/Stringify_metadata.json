@@ -58,11 +58,11 @@
 	},
 	"sources": {
 		"Assignments/Assignment2/Stringify.sol": {
-			"keccak256": "0xb76a033a35ceb4a94101ed53a339f282538d4ae2c8386f581e57f60977c89462",
+			"keccak256": "0x7aa445dceb4de4a1e95700e1beae0cee501cf136b3e70008e3884ee50a323332",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://f3dee1b217081ea094c2deccf09c2c8ed48a883cff27b471811e9924f56eaf9f",
-				"dweb:/ipfs/QmbhsewqXkoWQGs8HkteMu9UmH8Z1fhz4eoeDn4eCkRo5m"
+				"bzz-raw://5417f97df8d4acafec49960fd382fadefc147570233d65aaa23bdd104d1d03b8",
+				"dweb:/ipfs/QmaVHvJF2PJsxEjykxot4PHcaMDNfESFB61jk7bGqKLWFz"
 			]
 		}
 	},

@@ -149,7 +149,7 @@
 					},
 					{
 						"internalType": "uint256",
-						"name": "expiryDate",
+						"name": "publicationDate",
 						"type": "uint256"
 					}
 				],
@@ -233,19 +233,19 @@
 	},
 	"sources": {
 		"Assignments/Assignment2/Library.sol": {
-			"keccak256": "0x90840598a3ea1fe35acf9e69505262809bd1c12ea457e308b16c8dc260465996",
+			"keccak256": "0x0bff72ba68089113ec822ef6eab31050a2781af3d22d1f7d14cba9f4113eeaac",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://3f41b2f5c89f74f8f347fb14a2dac338af2197775957bbc0df44e260b1d18350",
-				"dweb:/ipfs/QmQyFF3FnoBEzRyDgLoUQVyKuZGddSZinsAWhgMPL86Qyh"
+				"bzz-raw://be749399841160e78b9480e8d0d6fc7f1e3f430941c07e62fdb31d9e7ccabe03",
+				"dweb:/ipfs/Qmd5cAtuWhkbUZtyzNeyfAqe8BU3FLpwziogDf6vpmQnnB"
 			]
 		},
 		"Assignments/Assignment2/Stringify.sol": {
-			"keccak256": "0xb76a033a35ceb4a94101ed53a339f282538d4ae2c8386f581e57f60977c89462",
+			"keccak256": "0x7aa445dceb4de4a1e95700e1beae0cee501cf136b3e70008e3884ee50a323332",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://f3dee1b217081ea094c2deccf09c2c8ed48a883cff27b471811e9924f56eaf9f",
-				"dweb:/ipfs/QmbhsewqXkoWQGs8HkteMu9UmH8Z1fhz4eoeDn4eCkRo5m"
+				"bzz-raw://5417f97df8d4acafec49960fd382fadefc147570233d65aaa23bdd104d1d03b8",
+				"dweb:/ipfs/QmaVHvJF2PJsxEjykxot4PHcaMDNfESFB61jk7bGqKLWFz"
 			]
 		}
 	},
