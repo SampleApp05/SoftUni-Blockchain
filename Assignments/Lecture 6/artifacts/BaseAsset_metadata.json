@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Assignments/Lecture 6/AssetFactory.sol": "BaseAsset"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Assignments/Lecture 6/AssetFactory.sol": {
+			"keccak256": "0x00cf3d985ed554f2a3bc331a396cfac5eb06406332e410c5e763f02145f32862",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://3c5685421e42a7c2cd3801fd6bdf9dd835cfec7d49dee2803ab5169daee6d1a7",
+				"dweb:/ipfs/QmQb2WecnbokynCasgQQ1EwFv89oQBiXDTAFtGgF9U43uN"
+			]
+		}
+	},
+	"version": 1
+}

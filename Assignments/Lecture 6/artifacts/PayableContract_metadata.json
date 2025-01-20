@@ -1,0 +1,69 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "Received",
+				"type": "event"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Assignments/Lecture 6/AssetFactory.sol": "PayableContract"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Assignments/Lecture 6/AssetFactory.sol": {
+			"keccak256": "0x325b2648dd2eca45f123d61c9f4238ea3a0405b2182db4ec512b5a1e9ff3b85e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://b55bdcf61065168652c1829c0a38a568a5c7784e6a0a2a9e162e9cd5149eedd9",
+				"dweb:/ipfs/Qmc6qYXNTJxUit1cDiHn35yugVHjJQKZN91aMSvkjhVSxc"
+			]
+		}
+	},
+	"version": 1
+}
