@@ -33,6 +33,30 @@
 			},
 			{
 				"inputs": [],
+				"name": "InvalidAddress",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "target",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "name",
 				"outputs": [
 					{
@@ -117,11 +141,11 @@
 	},
 	"sources": {
 		"Assignments/Lecture 6/AssetFactory.sol": {
-			"keccak256": "0x325b2648dd2eca45f123d61c9f4238ea3a0405b2182db4ec512b5a1e9ff3b85e",
+			"keccak256": "0xf0c98bbcb20fe57556c5171974261d88f7b0721726f2b910f000191f1d5fb424",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://b55bdcf61065168652c1829c0a38a568a5c7784e6a0a2a9e162e9cd5149eedd9",
-				"dweb:/ipfs/Qmc6qYXNTJxUit1cDiHn35yugVHjJQKZN91aMSvkjhVSxc"
+				"bzz-raw://e1866818ef9b4f78a66e783a0ca0389fcf41c3524771bc9babdde8cb748b6245",
+				"dweb:/ipfs/QmSfe44Q3Wjf39MtsiUnxh1mQbxMwt93MLDZRBCHpYiwAM"
 			]
 		}
 	},

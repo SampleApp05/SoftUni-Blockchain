@@ -6,14 +6,6 @@ error InvalidAddress();
 error IncorrectAmount();
 error AssetNotFound();
 
-contract PayableContract {
-    event Received(address, uint256);
-
-    receive() external payable {
-        emit Received(msg.sender, msg.value);
-    }
-}
-
 contract Asset  {
     string public name;
     string public ticker;
@@ -28,13 +20,18 @@ contract Asset  {
     }
 
     function transferTo(address target, uint256 amount) external payable {
-        if (msg.value > supply) revert IncorrectAmount();
+        if (msg.value > supply) { revert IncorrectAmount(); }
         supply = supply - amount;
 
-        (bool success, ) = target.call{value: msg.value}("");
+        (bool success, ) = payable(target).call{value: msg.value}("");
         require(success, "Transfer failed");
         
         holders[target] += amount;
+    }
+
+    function balanceOf(address target) public view returns (uint256) {
+        if (target == address(0)) { revert InvalidAddress(); }
+        return holders[target];
     }
 }
 
@@ -49,11 +46,11 @@ contract AssetFactory {
     }
 
     function send(address target, string memory assetTicker) external payable {
-        if (target == address(0)) revert InvalidAddress();
-        if (msg.value == 0) revert IncorrectAmount();
+        if (target == address(0)) { revert InvalidAddress(); }
+        if (msg.value == 0) { revert IncorrectAmount(); }
 
         address assetAddress = assets[assetTicker];
-        if (assetAddress == address(0)) revert AssetNotFound();
+        if (assetAddress == address(0)) { revert AssetNotFound(); }
 
         Asset asset = Asset(assetAddress);
         asset.transferTo(target, msg.value);
@@ -61,9 +58,17 @@ contract AssetFactory {
 
     function supplyFor(string memory ticker) public view returns (uint256) {
         address assetAddress = assets[ticker];
-        if (assetAddress == address(0)) revert AssetNotFound();
+        if (assetAddress == address(0)) { revert AssetNotFound(); }
 
         Asset asset = Asset(assetAddress);
         return asset.supply();
+    }
+
+    function balanceFor(string memory ticker) public view returns(uint256) {
+        address assetAddress = assets[ticker];
+        if (assetAddress == address(0)) { revert AssetNotFound(); }
+
+        Asset asset = Asset(assetAddress);
+        return asset.balanceOf(msg.sender);
     }
 }
