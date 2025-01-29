@@ -1,0 +1,93 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "redeemPoints",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "target",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "rewardPoints",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Assignments/Lecture 7/RewardPointsInterface.sol": "RewardsToken"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Assignments/Lecture 7/ERC20/ERC20.sol": {
+			"keccak256": "0xcec2d8f2f7d89cd8a1c6fb5c9824a2802940f903ce65ce6a667dd52121a434bc",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://915b5e4d82036f49e7eadef372f047e095bb3d2ab3f03c95965c56f987b2cd56",
+				"dweb:/ipfs/QmcdZ4qwjtwUPrqvk6TfFG9zpVQA7a9LeXTCVzLdLWTf6J"
+			]
+		},
+		"Assignments/Lecture 7/Helpers/Ownable.sol": {
+			"keccak256": "0xcd6e56c2575253404a76a081985a4013b97d757c7bf75effd68f9fbf3c00e206",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://4fffef51ce12cc6a345914870870bccfdd1312b3b48ad05e1852a8d6a4f41f30",
+				"dweb:/ipfs/QmSYPEmuiacR4q29bXHs81xq3bkhq9e5mJhMSUisvvAJ5m"
+			]
+		},
+		"Assignments/Lecture 7/RewardPointsInterface.sol": {
+			"keccak256": "0xeb14bab755fdbe696b5d5f0e248328c3f4c317ee259ba018ce3dd3f212a722da",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://c3a970560b2eef3be5ccbc5abd85b6fc58f73ba1ea3cee5e758f2c1484368356",
+				"dweb:/ipfs/QmTSsQw7eP7frEjBGown8fv1MkGrAWQr5N3jeaACDTL5jB"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,125 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "target",
+						"type": "address"
+					},
+					{
+						"internalType": "enum NFTLevel",
+						"name": "level",
+						"type": "uint8"
+					}
+				],
+				"name": "awardNFT",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "target",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum NFTLevel",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"name": "nfts",
+				"outputs": [
+					{
+						"internalType": "contract MockBaseNFTContract",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Assignments/Lecture 7/ERC721/NFTFactory.sol": "NFTFactory"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Assignments/Lecture 7/ERC721/ERC721.sol": {
+			"keccak256": "0xd4b71a87c7501f2b5427f2634b9f82368b9aaffb84bd2988d8a387a723367c6f",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://cda244272afce3cd341d05712e38478b1c6116c00b47cca89aa1367eae4d5887",
+				"dweb:/ipfs/QmQFCHSQmHAGnHEtxx1T13VyQuMWhMcub7QZWESTTvxgXd"
+			]
+		},
+		"Assignments/Lecture 7/ERC721/NFTFactory.sol": {
+			"keccak256": "0xd9c69e54592ebf6ed2d46b39f474bbf20b0b0b21f69a86ca26c5145de9820293",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://3af467f8bfd844b52dbc6cfd7663318d1562476099882429230b6cd9d12d4c4d",
+				"dweb:/ipfs/QmfGEcue87cZiU7sUV5URKbpVzSExhMEksjAmCsZYtZuE8"
+			]
+		}
+	},
+	"version": 1
+}

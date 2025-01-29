@@ -1,0 +1,491 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "IneligibleUser",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "InsuficientBalance",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "InsuficientSupply",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "UnauthorizedAccess",
+				"type": "error"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "Redeemed",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "Rewarded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "target",
+						"type": "address"
+					}
+				],
+				"name": "addPartner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "balance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "holders",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "minReward",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nftDistributor",
+				"outputs": [
+					{
+						"internalType": "contract NFTFactory",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "partners",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "redeemPoints",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "target",
+						"type": "address"
+					}
+				],
+				"name": "removePartner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "target",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "rewardPoints",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "target",
+						"type": "address"
+					}
+				],
+				"name": "tranferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Assignments/Lecture 7/Source/BrewBeanPointsToken.sol": "BrewBeanPointsToken"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Assignments/Lecture 7/ERC20/ERC20.sol": {
+			"keccak256": "0xcec2d8f2f7d89cd8a1c6fb5c9824a2802940f903ce65ce6a667dd52121a434bc",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://915b5e4d82036f49e7eadef372f047e095bb3d2ab3f03c95965c56f987b2cd56",
+				"dweb:/ipfs/QmcdZ4qwjtwUPrqvk6TfFG9zpVQA7a9LeXTCVzLdLWTf6J"
+			]
+		},
+		"Assignments/Lecture 7/ERC721/ERC721.sol": {
+			"keccak256": "0xd4b71a87c7501f2b5427f2634b9f82368b9aaffb84bd2988d8a387a723367c6f",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://cda244272afce3cd341d05712e38478b1c6116c00b47cca89aa1367eae4d5887",
+				"dweb:/ipfs/QmQFCHSQmHAGnHEtxx1T13VyQuMWhMcub7QZWESTTvxgXd"
+			]
+		},
+		"Assignments/Lecture 7/ERC721/NFTFactory.sol": {
+			"keccak256": "0xd9c69e54592ebf6ed2d46b39f474bbf20b0b0b21f69a86ca26c5145de9820293",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://3af467f8bfd844b52dbc6cfd7663318d1562476099882429230b6cd9d12d4c4d",
+				"dweb:/ipfs/QmfGEcue87cZiU7sUV5URKbpVzSExhMEksjAmCsZYtZuE8"
+			]
+		},
+		"Assignments/Lecture 7/Helpers/Ownable.sol": {
+			"keccak256": "0xcd6e56c2575253404a76a081985a4013b97d757c7bf75effd68f9fbf3c00e206",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://4fffef51ce12cc6a345914870870bccfdd1312b3b48ad05e1852a8d6a4f41f30",
+				"dweb:/ipfs/QmSYPEmuiacR4q29bXHs81xq3bkhq9e5mJhMSUisvvAJ5m"
+			]
+		},
+		"Assignments/Lecture 7/Source/BaseLoyaltyToken.sol": {
+			"keccak256": "0x750ab8c1403f8e817baafebe3a105058fc605b20503ae6a0765751047db63763",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://8e598e8d2d94f21cdbb15bffa4fe5d586dc3679a5c38d2a5effe075ec8f28ba0",
+				"dweb:/ipfs/QmP2tEaFYduSQ8wooZVSvpMt4Ub31zRgujNQmpCtBSGz8t"
+			]
+		},
+		"Assignments/Lecture 7/Source/BrewBeanPointsToken.sol": {
+			"keccak256": "0xfa2da4e46d9698cf9b4d2a1d2a4433e15afc6c502bbe2c317bb31e93487b2e14",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://52c5124b4d9bb8fdac36b0bb92c48008de43a7de25958678197dbbdb8f1b820e",
+				"dweb:/ipfs/QmctwjweXL79vrhVEN2jz4NMs91Qpivpanu5pj6KyRXRtZ"
+			]
+		},
+		"Assignments/Lecture 7/Source/Interfaces/RewardsTokenInterface.sol": {
+			"keccak256": "0x79d307decca4a5a5caf99ad3514493827bebf9e415d378d2452a996d61ae1aa6",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://34fa897b9da88adce9dd1bf9fda73047b2662343c0a599c5803c7cbf93dee9e5",
+				"dweb:/ipfs/QmSbY1JjuByi4By8D3ihbmKBbuGy2TVgcNEVVKpmWCqNmJ"
+			]
+		}
+	},
+	"version": 1
+}

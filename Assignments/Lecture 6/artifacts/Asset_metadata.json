@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.26+commit.8a97fa7a"
+		"version": "0.8.28+commit.7893614a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -63,6 +63,19 @@
 						"internalType": "string",
 						"name": "",
 						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -141,11 +154,11 @@
 	},
 	"sources": {
 		"Assignments/Lecture 6/AssetFactory.sol": {
-			"keccak256": "0xf0c98bbcb20fe57556c5171974261d88f7b0721726f2b910f000191f1d5fb424",
+			"keccak256": "0xe675dba851ebf3e522ff2f34ef3de984a0f9fb4f64dde9f8ea5c034f4aabcdfc",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://e1866818ef9b4f78a66e783a0ca0389fcf41c3524771bc9babdde8cb748b6245",
-				"dweb:/ipfs/QmSfe44Q3Wjf39MtsiUnxh1mQbxMwt93MLDZRBCHpYiwAM"
+				"bzz-raw://6abe570bf86397dcd1f7cede734d7e3ef2b7cebeee14ff244ef99f2a44466e1f",
+				"dweb:/ipfs/QmbNiS2Zy2YRKMj1VuhLsbgpxLAmAVU6kp19zYw4EHqHDa"
 			]
 		}
 	},

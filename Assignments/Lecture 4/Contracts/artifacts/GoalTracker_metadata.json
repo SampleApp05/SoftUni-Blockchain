@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.26+commit.8a97fa7a"
+		"version": "0.8.28+commit.7893614a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -83,7 +83,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Assignments/Assignment1/Contracts/GoalTracker.sol": "GoalTracker"
+			"Assignments/Lecture 4/Contracts/GoalTracker.sol": "GoalTracker"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -97,12 +97,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Assignments/Assignment1/Contracts/GoalTracker.sol": {
-			"keccak256": "0xed33cf5fac289a82c9a6285dc520367e92a47de6ea4a3e49f851bd13a197c413",
+		"Assignments/Lecture 4/Contracts/GoalTracker.sol": {
+			"keccak256": "0xde1262aee1c7331923c9ff0ae362bd530b932312e27c6af5d0971719c2c37d75",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://92e180681cd2e5d3ec300e9cd91866284932b0b65fb307f58299007e717d40a3",
-				"dweb:/ipfs/QmdyY5J2SM736UZDwpmHkmNwWajjEB9y4Jqbyv776c5KkT"
+				"bzz-raw://6f251373b61dd4f015f7322c0143b737711d4d7d7c2021c896e20487ed487102",
+				"dweb:/ipfs/QmWgEgSNoqMVb9w8LAPS8qwkztbGFMEdYbGdhQLoxTSPtB"
 			]
 		}
 	},

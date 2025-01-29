@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "redeemPoints",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "target",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "rewardPoints",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Assignments/Lecture 7/Source/Interfaces/RewardsTokenInterface.sol": "RewardsTokenInterface"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Assignments/Lecture 7/Source/Interfaces/RewardsTokenInterface.sol": {
+			"keccak256": "0x79d307decca4a5a5caf99ad3514493827bebf9e415d378d2452a996d61ae1aa6",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://34fa897b9da88adce9dd1bf9fda73047b2662343c0a599c5803c7cbf93dee9e5",
+				"dweb:/ipfs/QmSbY1JjuByi4By8D3ihbmKBbuGy2TVgcNEVVKpmWCqNmJ"
+			]
+		}
+	},
+	"version": 1
+}

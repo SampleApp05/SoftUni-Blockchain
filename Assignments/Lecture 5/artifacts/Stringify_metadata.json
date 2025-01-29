@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.26+commit.8a97fa7a"
+		"version": "0.8.28+commit.7893614a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -43,7 +43,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Assignments/Assignment2/Stringify.sol": "Stringify"
+			"Assignments/Lecture 5/Stringify.sol": "Stringify"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -57,12 +57,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Assignments/Assignment2/Stringify.sol": {
-			"keccak256": "0x7aa445dceb4de4a1e95700e1beae0cee501cf136b3e70008e3884ee50a323332",
+		"Assignments/Lecture 5/Stringify.sol": {
+			"keccak256": "0x947d5f6c9c1288ab1ee67d7da04279ba3a3a6ebc8408bc94ecb7027a035ae073",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://5417f97df8d4acafec49960fd382fadefc147570233d65aaa23bdd104d1d03b8",
-				"dweb:/ipfs/QmaVHvJF2PJsxEjykxot4PHcaMDNfESFB61jk7bGqKLWFz"
+				"bzz-raw://0680172d8a061d30207be7d72379514739b8b7489ff79411d311c53baba8928a",
+				"dweb:/ipfs/QmZ5RNByRhCzM67q4rvdVGtvt92VHA5m1bo2vHw4otPzRg"
 			]
 		}
 	},

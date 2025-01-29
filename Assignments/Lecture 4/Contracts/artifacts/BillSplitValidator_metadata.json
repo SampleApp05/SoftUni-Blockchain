@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.26+commit.8a97fa7a"
+		"version": "0.8.28+commit.7893614a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -53,7 +53,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Assignments/Assignment1/Contracts/BillSplitValidator.sol": "BillSplitValidator"
+			"Assignments/Lecture 4/Contracts/BillSplitValidator.sol": "BillSplitValidator"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -67,12 +67,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Assignments/Assignment1/Contracts/BillSplitValidator.sol": {
-			"keccak256": "0xcf18058b7b61aef0e32295bb315629dbd98caf4126ab2ffb81dc4f78cc6b9612",
+		"Assignments/Lecture 4/Contracts/BillSplitValidator.sol": {
+			"keccak256": "0x1f4bb57cf880e6cb23592babff647578f5b6dcae936fe28949b483ad6a24a489",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://4dbe55c46a3a2ed746c6c4edf3533a1c415e5a83a96c6e468a87311c64d76808",
-				"dweb:/ipfs/QmNsjh6x5mnZmSHPvu8wdcYTkZfTJQvem3xGyTbWkwRoXD"
+				"bzz-raw://9c14f7f0d6ea899a52d899f87ef4b03dcbe7ca4d51a76ca51842d5deb8638806",
+				"dweb:/ipfs/QmRs7E7CLVYnEAgVqjtyLeZRQ3Hdz8uiXbgwLJEnhELse4"
 			]
 		}
 	},
